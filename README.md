@@ -1,2 +1,3 @@
-# layout-project
-This is a frontend layout project. It's my first project. 
+# TheChocoMakers
+
+This is the choco makers ecommerce site

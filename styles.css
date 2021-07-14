@@ -1,125 +1,83 @@
-@media screen and (min-width: 990px){
-    .container{
-        margin: auto;
-        width: 60vw;
-    }
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
     font-family: sans-serif;
-    background: #eee;
+    overflow-x: hidden;
 }
-.header{
-    padding: 4px 7px;
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    width: 55rem;
+}
+
+nav{
+    padding: .6rem 0;
     display: flex;
     justify-content: space-between;
-    background: #393e46;
+    align-items: baseline;
 }
+
 ul{
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
-}
-li{
     list-style: none;
-    padding: 0 7px;
 }
-a{
-    color: white;
+
+.nav-a{
+    margin: 0 1rem;
+    color: #000;
     text-decoration: none;
 }
-nav{
-    padding: 3vh 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    box-shadow: 0 10px 10px #666;
-    background: #222831;
-}
-nav input{
-    padding: 7px;
-}
-.active{
-    font-size: 1.3em;
-}
-.showcase{
-    margin: 1vh 1vw;
-    padding: 2vh 0;
-}
-.showcase img{
-    width: 100%;
-}
-.main-text{
-    font-size: 2.3em;
-    font-weight: 400;
-    text-align: center;
-}
-.grid, .deals{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-.grid div, .deals div{
-    margin: 2vh 1vw;
-}
-.grid img{
-    width: 100%;
-}
-.grid h2, .deals h2{
-    font-weight: 600;
-    color: #32e0c4;
-    margin: 10px 0;
-}
-.deals img{
-    width: 100%;
-}
-.deals h2{
-    font-size: 2em;
-    font-weight: 500;
-}
-.reviews{
-    padding: 7vh;
-    text-align: center;
-    color: #32e0c4;
-    font-size: 23px;
-    font-weight: 400;
-}
-.reviews h2{
-    color: #232323;
-}
-.face{
-    margin: 3% 0;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
-footer{
-    padding: 10vh 0;
-    display: flex;
-    justify-content: space-around;
-    background: #393e46;
-    color: #eee;
-    box-shadow: 0 -10px 10px #666;
 
+.nav-a:hover{
+    color: blue;
 }
-footer input, button{
-    margin-bottom: 10px;
-    padding: 6px;
+
+.big-image {
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://images.unsplash.com/photo-1613082607219-f021f7e3d3e6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGNob2NvbGF0ZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
 }
-footer ul{
+  
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
-footer a{
-    color: #32e0c4;
+
+.product{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    background: #eee;
+    border-radius: .5rem;
+
 }
-.footer-text{
-    padding-bottom: 10px;
-    font-weight: 200;
-    color: #f4f4f4;
-    text-align: center;
-    background: #393e46;
+
+.product-img{
+    width: 100%;
+    border-radius: .5rem;
 }
+
+.product-text h1, p, a{
+    margin: 1rem 2rem;
+}
+
+
