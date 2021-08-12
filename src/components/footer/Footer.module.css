@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background: #00223F;
     color: #f6f5f4;
 }
@@ -71,7 +72,11 @@ main {
     -webkit-animation: wave calc(var(--speed, 0) * 1s) infinite linear;
         animation: wave calc(var(--speed, 0) * 1s) infinite linear;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+    .list{
+        margin: 1rem;
+    }
+
     .wave {
         height: calc(var(--height, 0) * 0.75vh);
     }
